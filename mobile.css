@@ -1,0 +1,61 @@
+.background {
+/* background image by http://dynamicz34.deviantart.com/ */
+    background:url(../images/bg_pattern.gif) repeat,url(../images/bg.jpg) no-repeat;
+    background-size:auto auto,100% 100%;
+	width:100% !important;
+	height:100% !important;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+body {
+	font-family:'Titillium Web',sans-serif;
+	overflow:hidden;
+}
+
+#logo {
+    position:relative;
+    width:125px;
+    height:125px;
+    margin-left:-75px;
+    margin-bottom:15px;
+    padding-top:40px
+}
+
+
+#animator {
+    position:relative;
+    top:50%;
+    left:50%;
+    width:320px;
+    height:320px;
+    z-index:3
+}
+
+a {
+    display:block;
+    background:rgba(240,240,2405,0.9);
+    position:relative;
+    margin-left:10%;
+    margin-right:10%;
+    text-align:center;
+    margin-bottom:2px;
+}
+
+a img {
+    width:20px;
+    margin:1px;
+}
+
+footer {
+    position:absolute;
+
+    bottom:0;
+    text-align:center;
+    background:rgba(255,255,255,0.8);
+    width:100%;
+    margin:0;
+    border:0;
+    left:0
+}

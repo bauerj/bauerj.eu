@@ -5,6 +5,9 @@ var anchors;
 var i;
 var size;
 window.onload = function() {
+	var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+	if (width < 560)
+		return;
     document.getElementById('circle').className = 'unrotate';
     document.getElementsByClassName('background')[0].className += ' zoom-out';
     alignLinks();
@@ -21,7 +24,7 @@ function alignLinks() {
             mouseOutOfAnchor(this)
         };
         alignLink(i);
-        window.setTimeout(fadeIn, 500 + (i * 100));
+        window.setTimeout(fadeIn, 600 + (i * 70));
     }
     i = 0;
 }
@@ -50,8 +53,10 @@ function alignLink(i) {
     } else {
         anchor.style.borderTopRightRadius = "5px";
         anchor.style.borderBottomRightRadius = "5px";
+        anchor.style.paddingRight = "5px";
     }
     anchor.style.transform = "rotate(" + rotate + "deg)";
+    anchor.style.webkitTransform = "rotate(" + rotate + "deg)";
     anchor.style.marginTop = marginTop;
     anchor.style.display = "block";
 }
